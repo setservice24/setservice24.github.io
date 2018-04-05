@@ -1,0 +1,207 @@
+.catalog{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  &-wrapper{
+    width: 324px;
+    border-right: 2px solid #eee;
+    padding-bottom: 25px;
+    .title-section{
+      font-size: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+      letter-spacing: 0;
+    }
+    .btn-text-send{
+      display: block;
+      margin: 0 auto;
+      color: @color-btn;
+      background: lighten(@yellow, 35%);
+      transition: .25s;
+      &:hover{
+        color:#282828;
+        background: @yellow;
+        transition: .25s;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  &-list{
+    width: 324px;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    list-style: none;
+    border-right: 2px solid #eee;
+  }
+  &-title{
+    display: inline-block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    font-size: 16px;
+    color: lighten(@color-btn, 20%);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .25s;
+    &:hover{
+      color: @color-btn;
+      transition: .25s;
+    }
+    &-active{
+      color: #000;
+      transition: .25s;
+    }
+  }
+  &-content{
+  }
+  &-worker{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    &-img{
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    &-title{
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: @color-btn;
+    }
+    &-undertitle{
+      color: lighten(@color-btn, 20%);
+      text-align: center;
+      font-weight: normal;
+    }
+  }
+  &-contacts{
+
+  }
+  &-phone,
+  &-email {
+    text-decoration: none;
+    color: @color-btn;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 8px;
+    transition: .25s;
+    &:hover{
+      color: #000;
+      transition: .25s;
+    }
+  }
+}
+
+.category{
+  list-style: none;
+  display: none;
+  &-active {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-item{
+    &-link{
+      display: block;
+      width: 180px;
+      height: 220px;
+      background: lighten(@yellow, 35%);
+      margin-bottom: 20px;
+      padding: 10px;
+      transition: .25s;
+      text-decoration: none;
+      color: #282828;
+      &:hover{
+        background: lighten(@yellow, 15%);
+        transition: .25s;
+        color: #000;
+      }
+    }
+    &-img{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      width: 100px;
+      height: 100px;
+    }
+    &-name{
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+
+// .catalog{
+//   &-header{
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     display: -webkit-flex;
+//     display: -ms-flex;
+//     display: flex;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
+//     width: 100%;
+//     padding: 20px;
+//   }
+//   &-title{
+//     color:#ccc;
+//     cursor: pointer;
+//     text-align: center;
+//     margin-bottom: 20px;
+//     &-active{
+//       color: #000;
+//     }
+//     &:hover{
+//       color: @color-btn;
+//     }
+//   }
+// }
+//
+// .category{
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+//   display: none;
+//   &-active{
+//     display: -webkit-flex;
+//     display: -ms-flex;
+//     display: flex;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
+//   }
+//   &-item{
+//     width: 200px;
+//     height: 250px;
+//     background: lighten(@yellow, 40%);
+//     transition: .25s;
+//     padding: 20px 15px;
+//     margin-bottom: 20px;
+//     &:hover{
+//       background: lighten(@yellow, 30%);
+//       transition: .25s;
+//     }
+//     &-name{
+//       display: block;
+//       text-align: center;
+//     }
+//     &-img{
+//       width: 120px;
+//       height: 120px;
+//       display: block;
+//       margin: 0 auto;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
